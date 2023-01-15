@@ -27,7 +27,7 @@ const removeShow = function () {
 };
 const responsive = function () {
   console.log(innerWidth);
-  if (window.innerWidth <= "700") {
+  if ( document.documentElement.clientWidth<= "700") {
     nav.classList.remove("links");
     nav.classList.add("hidden");
     menubar.style.display = "inline-block";
