@@ -1,0 +1,315 @@
+html {
+  font-size: 62.5%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 110rem;
+  margin: 0 auto;
+  position: relative;
+  font-family: "Inter", sans-serif;
+  color: #f7f7f7;
+
+  background: linear-gradient(to bottom left, #043c69, #330d30);
+}
+img {
+  width: 100%;
+  transition: filter 0.5s;
+}
+
+.hidden {
+  display: none;
+}
+.takeToback {
+  z-index: -1;
+}
+.navigation {
+  display: flex;
+  height: 7rem;
+  gap: 2rem;
+  /* width: 120rem; */
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 13rem;
+  /* background: linear-gradient(to top left, #39b385, #9be15d); */
+  position: sticky;
+  line-height: 1.9;
+  color: #f7f7f7;
+}
+.links {
+  width: 70rem;
+  display: flex;
+  justify-content: space-between;
+}
+.navigation img {
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+}
+
+.navigation nav a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: #f7f7f7;
+}
+.navigation nav a:hover {
+  background-color: #59d35f;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
+
+.btn {
+  text-align: center;
+  line-height: normal;
+  text-decoration: none;
+  /* width: 140px; */
+  font-size: 1.8rem;
+  background-color: #5f0359;
+  padding: 1rem 2rem;
+  color: #f7f7f7;
+  border-radius: 2rem;
+}
+.slogan > div h1 {
+  font-size: 4.2rem;
+}
+.slogan > div p {
+  font-size: 2.4rem;
+}
+.slogan > div {
+  margin-bottom: 9rem;
+}
+
+.slider {
+  max-width: 100rem;
+  height: 50rem;
+  margin: 0 auto;
+  position: relative;
+  /* border: 3px solid rgb(155, 76, 76); */
+  /* IN THE END */
+  overflow: hidden;
+  margin-bottom: 15rem;
+}
+.slide {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 50rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* THIS creates the animation! */
+  transition: transform 1s;
+}
+.slide > img {
+  /* Only for images that have different size than slide */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.slider__btn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+
+  border: none;
+  background: rgba(255, 255, 255, 0.7);
+  font-family: inherit;
+  color: #333;
+  border-radius: 50%;
+  height: 5.5rem;
+  width: 5.5rem;
+  font-size: 3.25rem;
+  cursor: pointer;
+}
+
+.slider__btn--left {
+  left: 6%;
+  transform: translate(-50%, -50%);
+}
+
+.slider__btn--right {
+  right: 6%;
+  transform: translate(50%, -50%);
+}
+
+.login-section,
+.sign-up-section {
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-75%, -50%);
+  width: 70%;
+  color: #330d30;
+  background-color: #f3f3f3;
+  padding: 6rem;
+  border-radius: 2rem;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+  transition: all 0.5s;
+}
+.close-modal {
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+  background-color: #59d35f;
+  border-radius: 2rem;
+  cursor: pointer;
+  width: 6rem;
+  border: none;
+  font-size: 30px;
+}
+.login-section input,
+.sign-up-section input {
+  width: 30rem;
+  display: block;
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 2rem;
+  color: black;
+  position: relative;
+  left: 20rem;
+  /* position: fixed; */
+}
+.login-button,
+.sign-up-button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+}
+.login-section h1,
+.sign-up-section h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+.testimonial {
+  color: #330d30;
+  text-align: center;
+  width: 50rem;
+  position: relative;
+  left: 30rem;
+  background: linear-gradient(to top left, #59d35f, #9be15d);
+  border-radius: 2rem;
+  margin-bottom: 10rem;
+  z-index: -1;
+}
+.testimonial div {
+  display: flex;
+  gap: 2rem;
+}
+.testimonial img {
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.testimonial h1 {
+  align-self: flex-end;
+}
+.testimonial p {
+  padding: 2rem;
+  font-size: 2.5rem;
+}
+
+.sec-section {
+  /* background-color: #087f5b; */
+  color: #f7f7f7;
+  border-radius: 5rem;
+  padding: 1rem 2rem;
+  font-size: 3.2rem;
+  text-align: center;
+  margin-bottom: 10rem;
+}
+.last-section {
+  font-size: 3.5rem;
+  text-align: center;
+  margin-bottom: 10rem;
+}
+footer {
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+  background: linear-gradient(to top left, #59d35f, #9be15d);
+}
+footer div img {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+}
+.icons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5rem;
+}
+.footer-signup {
+  display: inline-block;
+  margin: 2rem 0 8rem 0;
+  font-size: 30px;
+  color: #fff;
+  background-color: #330d30;
+}
+.footer__copyright {
+  font-size: 14px;
+  text-decoration: none;
+}
+.show {
+  position: fixed;
+  top: 0;
+  left: 0;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #043c69;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+
+  transition: all 0.5s;
+}
+.close-modal button {
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+  background-color: #59d35f;
+  border-radius: 2rem;
+  cursor: pointer;
+  width: 6rem;
+  border: none;
+  font-size: 30px;
+}
+@media (max-width: 900px) {
+  html {
+    font-size: 50%;
+  }
+  .navigation nav a {
+    font-size: 40px;
+  }
+}
+@media (max-width: 700px) {
+  html {
+    font-size: 40%;
+  }
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 32.5%;
+  }
+}
