@@ -48,7 +48,7 @@ const responsive = function () {
   }
 };
 responsive();
-visualViewport.addEventListener("resize", responsive);
+// visualViewport.addEventListener("resize", responsive);
 
 video.forEach((vid) => {
   const vidplayer = document.createElement("img");
