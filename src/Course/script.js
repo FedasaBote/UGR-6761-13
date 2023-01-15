@@ -2,7 +2,7 @@ const video = document.querySelectorAll(".video");
 const navig = document.querySelector(".navigation");
 // const container = document.querySelector(".grid-2-cols");
 const menubar = document.createElement("img");
-menubar.src = "/src/images/icons8-menu-rounded-50.png";
+menubar.src = "../images/icons8-menu-rounded-50.png";
 menubar.alt = "menubar";
 const nav = navig.querySelector("nav");
 navig.append(menubar);
@@ -54,7 +54,7 @@ video.forEach((vid) => {
   const vidplayer = document.createElement("img");
   vidplayer.classList.add("vidPlayer");
   vidplayer.alt = "player-video";
-  vidplayer.src = "/src/images/icons8-play-button-circled-48.png";
+  vidplayer.src = "icons8-play-button-circled-48.png";
   vid.prepend(vidplayer);
   errorhandle.push(vid);
 });
