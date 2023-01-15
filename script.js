@@ -163,7 +163,7 @@ const removeShow = function () {
   });
 };
 const responsive = function () {
-  if (window.innerWidth <= "900") {
+  if (document.documentElement.clientWidth <= "900") {
     nav.classList.remove("links");
     nav.classList.add("hidden");
     menubar.style.display = "inline-block";
