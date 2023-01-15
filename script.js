@@ -133,7 +133,7 @@ const footer = document.querySelector("footer");
 const navig = document.querySelector(".navigation");
 // const container = document.querySelector(".grid-2-cols");
 const menubar = document.createElement("img");
-menubar.src = "icons8-menu-rounded-50.png";
+menubar.src = "./src/images/icons8-menu-rounded-50.png";
 menubar.alt = "menubar-image-photo";
 const nav = navig.querySelector("nav");
 navig.append(menubar);
