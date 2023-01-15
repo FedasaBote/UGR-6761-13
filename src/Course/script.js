@@ -54,7 +54,7 @@ video.forEach((vid) => {
   const vidplayer = document.createElement("img");
   vidplayer.classList.add("vidPlayer");
   vidplayer.alt = "player-video";
-  vidplayer.src = "../images/icons8-play-button-circled-48.png";
+  vidplayer.src = "https://github.com/FedasaBote/UGR-6761-13/blob/CSS-JS/src/images/icons8-play-button-circled-48.png";
   vid.prepend(vidplayer);
   errorhandle.push(vid);
 });
