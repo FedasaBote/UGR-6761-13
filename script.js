@@ -97,7 +97,7 @@ showCourses.addEventListener("click", function (e) {
     );
     return;
   }
-  window.open("../Course/index.html", "_self");
+  window.open("./src/Course/index.html", "_self");
 });
 let curSlide = 2;
 const slides = document.querySelectorAll(".slide");
