@@ -48,7 +48,7 @@ loginbutton.addEventListener("click", function (e) {
     );
 
   isLogged = true;
-  // window.open("../Course/index.html", "_self");
+  // window.open("src/Course/index.html", "_self");
   logicSection.classList.add("hidden");
   overlay.classList.add("hidden");
   alert("you can now access courses");
@@ -97,7 +97,7 @@ showCourses.addEventListener("click", function (e) {
     );
     return;
   }
-  window.open("./src/Course/index.html", "_self");
+  window.open("src/Course/index.html", "_self");
 });
 let curSlide = 2;
 const slides = document.querySelectorAll(".slide");
