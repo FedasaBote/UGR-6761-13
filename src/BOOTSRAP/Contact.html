@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+    <link rel="stylesheet" href="bootstrap.css">
+
+    
+    <style>
+      .navigation img {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+      }
+      .margin-bottom{
+        margin-bottom: 10rem;}
+    .hidden {display: none}
+   .show {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.5s;
+}
+.first-sec {
+  margin-bottom: 2rem;
+}
+/* .second-sec {
+  color: #330d30;
+  background-color: #9be15d;
+  padding: 1.5rem 3rem;
+  border-radius: 1rem;
+} */
+
+.second-sec h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+.second-sec label {
+  margin-bottom: 1rem;
+}
+.second-sec input {
+  height: 3rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+.second-sec textarea {
+  width: 100%;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+.second-sec button {
+  position: relative;
+  left: 30%;
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  font-size: 2rem;
+  color: #f7f7f7;
+  background-color: #330d30;
+}
+input,
+textarea {
+  display: block;
+}
+
+    </style>
+
+    <title>Contacts</title>
+  </head>
+  <body class="p-3 mb-2 bg-success text-white">
+    <div class="container">
+      <header>
+        <!-- <div class="navigation">
+          <img src="/images/Logo.png" alt="logo-of-the-page" />
+          <nav class="links">
+            <a href="/Home/index.html">Home</a>
+            <a href="/About/index.html">About</a>
+            <a href="/Contacts/index.html">Contacts</a>
+            <a href="/Service/index.html">Services</a>
+            <a class="courses" href="/Course/index.html">Courses</a>
+          </nav>
+        </div> -->
+        <div class="navbar navigation navbar-expand-lg margin-bottom">
+          <nav class="container">
+            <img
+              src="/images/Logo.png"
+              alt="logo-of-the-page"
+              class="navbar-brand"
+            />
+            <button
+              class="btn btn-primary d-lg-none"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#nav"
+              aria-controls="nav"
+            >
+              <img src="icons8-menu-rounded-50.png" alt="menubar" />
+            </button>
+            <div
+              class="offcanvas-lg offcanvas-end"
+              tabindex="-1"
+              aria-labelledby="offcanvasResponsiveLabel"
+              id="nav"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="../../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="About.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Contact.html">Contacts</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Service.html">Services</a>
+                </li>
+                <a class="courses nav-link" href="Course.html"
+                  >Courses</a
+                >
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <div class="container">
+        <main class="grid-2-cols row">
+          <section class="first-sec col-md-12 col-lg">
+            <h1>Contacts Me</h1>
+            <nav>
+              <a href="#" class="d-block">Email: fedasagete@gmail.com</a>
+              <Facebook href="https://www.facebook.com/boja.fedasa" class="d-block">Facebook</a>
+              <Telegram href="https://t.me/fedasab" class="d-block">Telegram</a>
+            </nav>
+          </section>
+          <section class="second-sec p-3 mb-2 bg-primary text-white col-md-12 col-lg">
+            <form class="needs-validation" novalidate>
+              <h1>Send us your Question</h1>
+              <div class="name">
+                <label class="form-label" for="name">Name</label>
+                <input type="text" id="name" />
+                <span class="hidden">Your name is required</span>
+              </div>
+              <label for="phone">Phone</label>
+              <div class="phone">
+                <input type="number" id="phone" />
+                <span class="hidden">please enter correct phone number</span>
+              </div>
+              <label for="question">Question</label>
+              <div class="question">
+                <textarea id="question" cols="20" rows="10"></textarea>
+                <span class="hidden">Enter valid question</span>
+              </div>
+            </form>
+            <button class="send">Send us</button>
+          </section>
+        </main>
+      </div>
+      <footer class="pt-5 mt-5">
+        <div class="icons row text-center" >
+          <a href="#" class="col-2"
+            ><img src="/images/facebook.jpg" alt="facebook-link"
+          /></a>
+          <a href="#" class="col-2"
+            ><img src="/images/telegram.jpg" alt="telegram-link"
+          /></a>
+          <a href="#" class="col-2"
+            ><img src="/images/linkedn.jpg" alt="linkedin-link"
+          /></a>
+          <a href="#" class="col-2"
+            ><img src="/images/youtube.jpg" alt="youtube-link"
+          /></a>
+          <a href="#" class="col-2"
+            ><img src="/images/insta.jpg" alt="insta-link"
+          /></a>
+        </div>
+        <p class="footer__copyright text-center">
+          &copy; Copyright by
+          <a class="footer__link" target="_blank" href="https://t.me/fedasab"
+            >Fedasa Bote</a
+          >.Don't claim as your own product.
+        </p>
+      </footer>
+    </div>
+    <script
+      
+    >const nameInput = document.querySelector("#name");
+    const name = document.querySelector(".name");
+    const phoneInput = document.querySelector("#phone");
+    const phone = document.querySelector(".phone");
+    const questionInput = document.querySelector("#question");
+    const question = document.querySelector(".question");
+    const sendbtn = document.querySelector(".send");
+    
+    sendbtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      if (nameInput.value.length <= 3) {
+        const spaname = name.querySelector("span");
+        spaname.classList.remove("hidden");
+        return;
+      }
+      if (String(phoneInput.value).length !== 10) {
+        const spaname = phone.querySelector("span");
+        spaname.classList.remove("hidden");
+        return;
+      }
+      if (questionInput.value.length < 5) {
+        const spaname = question.querySelector("span");
+        spaname.classList.remove("hidden");
+        return;
+      }
+      const spaname = question.querySelector("span");
+      spaname.textContent = "your question is received";
+      spaname.classList.remove("hidden");
+    });
+    </script>
+  </body>
+</html>

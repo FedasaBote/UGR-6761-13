@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="bootstrap.css" />
+    <script src="bootstrap.js"></script>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <title>Service</title>
+    <style>
+      .show {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        transition: all 0.5s;
+      }
+      .navigation img {
+        /* margin-top: 2rem; */
+        /* margin-right: 53rem; */
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+      .navigation a {
+        color: red;
+      }
+      .hidden {
+        display: none;
+      }
+      .first-section img {
+        width: 25px;
+        height: 25px;
+        margin-bottom: 1.7rem;
+      }
+      /* .second-section {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+      } */
+    </style>
+  </head>
+  <body class="p-3 mb-2 bg-success text-white">
+    <div class="container">
+      <header>
+        <div class="navbar navigation navbar-expand-lg pb-5 mb-5">
+          <nav class="container">
+            <img
+              src="/images/Logo.png"
+              alt="logo-of-the-page"
+              class="navbar-brand"
+            />
+            <button
+              class="btn btn-primary d-lg-none"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#nav"
+              aria-controls="nav"
+            >
+              <img src="icons8-menu-rounded-50.png" alt="menubar" />
+            </button>
+            <div
+              class="offcanvas-lg offcanvas-end"
+              tabindex="-1"
+              aria-labelledby="offcanvasResponsiveLabel"
+              id="nav"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="../../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="About.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Contact.html">Contacts</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Service.html">Services</a>
+                </li>
+                <a class="courses nav-link" href="Course.html">Courses</a>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <section class="first-section pt-5 pb-5 mt-5 mb-5">
+        <div class="col-6">
+          <h1 class="title">Services</h1>
+          <h2>All you need in one pack here</h2>
+          <p class="title-paragraph">
+            Take a look to our <a href="/Course/index.html">Courses</a>
+          </p>
+          <p>Some of our resources we are providing are listed below</p>
+        </div>
+        <div class="container-lg text-center">
+          <div class="row">
+            <article
+              class="col-3 m-4 p-3 mb-2 bg-primary text-white col-md-12 col-lg"
+            >
+              <img src="/images/book-open.png" alt="BookIcon" />
+              <h1>Books</h1>
+              <p>
+                Books of written by different scholars will be find on the
+                internet and made available through our platform for students
+                want to read books. Advanced books cannot be accessed easily so
+                we wiil try our best to make available for you!
+              </p>
+            </article>
+            <article
+              class="col-3 m-4 p-3 mb-2 bg-primary text-white col-md-12 col-lg"
+            >
+              <img src="/images/monitor-play.png" alt="VideoIcon" />
+              <h1>Videos</h1>
+              <p>
+                Selected videos from youtube and other free available resources
+                will be told for students as information. short Videos which
+                could help in some difficult part of courses will be tried to be
+                provided by our team!
+              </p>
+            </article>
+            <article
+              class="col-3 m-4 p-3 mb-2 bg-primary text-white col-md-12 col-lg"
+            >
+              <img src="/images/note-blank.png" alt="NoteIcon" />
+              <h1>Notes</h1>
+              <p>
+                Short Notes are important part of studying in every student
+                school life. We do try to provide you short notes written by our
+                team on every part of Physics, Math, and Coding subjects.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div
+          class="second-section pt-5 mb-lg-5 position-relative start-50 translate-middle-x"
+          style="width: 60rem"
+        >
+          <h1>Pros of using this platform</h1>
+          <ul class="list-unstyled">
+            <li>Highly recognizable and valued in the highschool community</li>
+            <li>
+              free Provision of uniquely designed courses recommended for you
+            </li>
+            <li>users Offers certification upon course completion</li>
+            <li>
+              Allows you to assess your progress using quizzes and crack
+              questions provided on our platform
+            </li>
+          </ul>
+        </div>
+      </section>
+      <footer class="pt-5 mt-5">
+        <div class="icons row text-center" style="margin-left: 5rem">
+          <a href="#" class="col-2"
+            ><img src="/images/facebook.jpg" alt="facebook-link"
+          /></a>
+          <a href="#" class="col-2"
+            ><img src="/images/telegram.jpg" alt="telegram-link"
+          /></a>
+          <a href="#" class="col-2"
+            ><img src="/images/linkedn.jpg" alt="linkedin-link"
+          /></a>
+          <a href="#" class="col-2"
+            ><img src="/images/youtube.jpg" alt="youtube-link"
+          /></a>
+          <a href="#" class="col-2"
+            ><img src="/images/insta.jpg" alt="insta-link"
+          /></a>
+        </div>
+        <p class="footer__copyright text-center">
+          &copy; Copyright by
+          <a class="footer__link" target="_blank" href="https://t.me/fedasab"
+            >Fedasa Bote</a
+          >.Don't claim as your own product.
+        </p>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

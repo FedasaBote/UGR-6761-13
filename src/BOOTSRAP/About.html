@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap.css" />
+
+    <title>About</title>
+    <style>
+      html {
+        font-size: 62.5%;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .navigation a {
+        font-size: 20px;
+      }
+      footer img {
+        width: 50px;
+        height: 50px;
+      }
+      .hidden {
+        display: none;
+      }
+      .first-item h1 {
+        font-size: 25px;
+        margin-bottom: 2rem;
+      }
+      .first-item ul li {
+        text-decoration: none;
+        list-style: lower-greek;
+        font-size: 20px;
+        margin-bottom: 2rem;
+      }
+      .second-item {
+        max-width: 70rem;
+        font-size: 2rem;
+        line-height: 1.9;
+      }
+      .second-item strong {
+        font-size: 2.5rem;
+        font-style: italic;
+      }
+      img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+      }
+
+      .show {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        z-index: 1000;
+      }
+    </style>
+  </head>
+  <body class="p-3 mb-2 bg-success text-white">
+    <div class="container">
+      <header>
+        <div class="navbar navigation navbar-expand-lg">
+          <nav class="container">
+            <img
+              src="/images/Logo.png"
+              alt="logo-of-the-page"
+              class="navbar-brand"
+            />
+            <button
+              class="btn btn-primary d-lg-none"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#nav"
+              aria-controls="nav"
+            >
+              <img src="icons8-menu-rounded-50.png" alt="menubar" />
+            </button>
+            <div
+              class="offcanvas-lg offcanvas-end"
+              tabindex="-1"
+              aria-labelledby="offcanvasResponsiveLabel"
+              id="nav"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="../../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="About.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Contacts.html">Contacts</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Service.html">Services</a>
+                </li>
+                <a class="courses nav-link" href="Course.html">Courses</a>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <section class="grid-2-cols row">
+        <div class="first-item col-md-12 col-lg">
+          <img src="/images/fedasa.jpg" alt="Photo-of-developer" />
+          <h1>My name is Fedasa Bote</h1>
+          <ul>
+            <li>Job: Student</li>
+            <li>Department: Software</li>
+          </ul>
+          <audio class="audio" controls src="/images/Audio.mp3"></audio>
+        </div>
+        <div class="second-item col-md-12 col-lg">
+          <p>
+            our platform is founded to provide resource for students in a
+            highschool level!
+            <br />
+            <strong>We believe</strong>
+            <br />
+            Learning is the source of human progress.
+            <br />
+            It has the power to transform our world from illness to health, from
+            poverty to prosperity, from conflict to peace.
+            <br />
+            It has the power to transform our lives for ourselves, for our
+            families, for our communities.
+            <br />
+            No matter who we are or where we are, learning empowers us to change
+            and grow and redefine what’s possible. That’s why access to the best
+            learning is a right, not a privilege.
+            <br />
+            And that’s why our platform is here.
+            <br />
+            So that anyone, anywhere has the power to transform their life
+            through learning.
+          </p>
+        </div>
+      </section>
+      <footer class="pt-5 mt-5">
+        <div class="icons row text-center" style="margin-left: 5rem">
+          <a href="#" class="col-2"
+            ><img src="/images/facebook.jpg" alt="facebook-link"
+          /></a>
+          <a href="#" class="col-2"
+            ><img src="/images/telegram.jpg" alt="telegram-link"
+          /></a>
+          <a href="#" class="col-2"
+            ><img src="/images/linkedn.jpg" alt="linkedin-link"
+          /></a>
+          <a href="#" class="col-2"
+            ><img src="/images/youtube.jpg" alt="youtube-link"
+          /></a>
+          <a href="#" class="col-2"
+            ><img src="/images/insta.jpg" alt="insta-link"
+          /></a>
+        </div>
+        <p class="footer__copyright text-center">
+          &copy; Copyright by
+          <a class="footer__link" target="_blank" href="https://t.me/fedasab"
+            >Fedasa Bote</a
+          >.Don't claim as your own product.
+        </p>
+      </footer>
+    </div>
+
+    <script src="bootstrap.js"></script>
+  </body>
+</html>
